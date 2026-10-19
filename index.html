@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    
+    <!-- CSS Stylesheet -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Gowun+Dodum&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&family=Vina+Sans&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Bagel+Fat+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+    <!-- 1. FULL WIDTH: Header Navigation (Stretches 100% edge-to-edge) -->
+    <header>
+        <nav>
+            <ul class="topnav">
+                <li><a href="index.html">About</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="toolkit.html">Toolkit</a></li>
+                <li><a href="experiments.html">Experiments</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2. FULL WIDTH: Hero Section (Stretches 100% edge-to-edge) -->
+    <section class="hero">
+        <img src="images/portfoliopic.jpg" alt="Anna Williamson Portfolio" width="100%" class="hero-img">
+        <h1 class="main-title">MY PERSONAL WEBSITE</h1>
+        <h1 class="hero-subtitle">*This website was created by Anna Williamson as a student project for ARTD 245: Web Design at North Central College in Naperville, IL, in 2026. All original graphics were created using Photoshop, Illustrator, or Procreate, and the site was hand-coded using HTML and CSS in Dreamweaver. Text content and design theory are adapted from Flux Academy, Tilda Education, and Dribbble articles.*</h1>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- 3. MARGIN WRAPPER: Everything below gets side margins/padding -->
+    <!-- ========================================================== -->
+    <div class="page-content">
+        <main>
+   
+      <section class="statement-section" style="background-image: url('images/statementsectionpic-02.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; text-align: center;">
+    <h3>Blending bold typography, rich color choices and versatile design choices crafted both digitally and by hand.</h3>
+</section>
+
+            <!-- Contact Form Section -->
+          <section class="contact-section">
+    <div class="container">
+      <div style="text-align:center">
+         <h2>CONTACT ME</h2>
+      </div> <!-- <--- Added this closing div tag -->
+        
+        <div class="row">
+            <div class="column">
+                <img src="images/contactme.png" alt="Contact Illustration" style="width:100%">
+            </div>
+            
+            <div class="column">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                    
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</main> <!-- <--- Added closing main tag -->
+    </div>
+ <footer class="site-footer">
+    <ul class="footer-links">
+        <li><a href="#top">Back to Top</a></li>
+        <li><a href="mailto:awilliamson7029@gmail.com">Email me</a></li>
+    </ul>
+</footer>
+</body>
+</html>

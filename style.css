@@ -1,0 +1,917 @@
+@charset "UTF-8";
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #262425;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+a {
+    transition: all 0.3s ease;
+}
+
+h1 {
+    color: #d9bac9;
+    font-size: 9vw;
+    padding-bottom: 3%;
+	font-family: "BBH Bogle";
+	text-align: center;
+}
+
+
+h4 { 
+text-align: center;
+	font-family: "BBH Bogle";
+	
+
+}
+
+
+
+
+
+
+h2, h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 3vw;
+	font-family: "BBH Bogle";
+}
+
+.workfooter {
+background-color: #d96299;
+padding: 5%;
+	color: #400923;
+	text-decoration: none;
+	font-family: "Montserrat";
+	
+
+}
+
+h2 {
+    color: #d96299;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #FFFFFF;
+    font-size: 2rem;
+    line-height: 1.8;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+}
+
+
+
+header {
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+}
+
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #d9bac9;
+}
+
+ul.topnav li {
+    flex: 1;
+    text-align: center;
+}
+
+ul.topnav li a {
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 20px;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-variant-caps: all-petite-caps;
+    letter-spacing: 2px;
+}
+
+ul.topnav li a:hover,
+ul.topnav li a.active {
+    background-color: #d96299;
+    color: #FFFFFF;
+}
+
+.toolkitheader {
+    font-family: "BBH Bogle";
+    font-size: 10vw;
+    letter-spacing: -2px;
+    text-align: center;
+    color: #d9bac9;
+    padding-top: 5%;
+    margin: 0;
+    background-image: url('images/experimentspic.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==========================================================================
+   4. Hero & Statement Sections
+   ========================================================================== */
+
+.hero {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.hero-subtitle {
+    width: 100%;
+    max-width: 1600px;
+    margin: 40px auto 10px auto;
+    color: #d96299;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.2rem;
+    line-height: 2;
+    font-weight: 400;
+    text-align: center;
+}
+
+.statement-section {
+    padding: 17% 5% 15% 5%;
+    margin: 10% 0;
+    text-align: center;
+    font-size: 2.5rem;
+    width: 100%;
+    font-variant-caps: all-small-caps;
+    display: flex;
+    justify-content: center;
+}
+
+.statement-section h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    width: 100%;
+    line-height: 1.5;
+    color: #d96299;
+}
+
+/* Full-Width Quote Breakouts */
+.typographyquote,.contrastquote {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 3vw;
+    text-align: center;
+    background-color: #d9bac9;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+    padding: 4% 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    box-sizing: border-box;
+}
+
+.typographyquote {
+    color: #8c0444;
+}
+
+.contrastquote {
+    color: #400923;
+	    padding: 10%;
+	
+}
+
+/* ==========================================================================
+   5. Buttons & Elements
+   ========================================================================== */
+
+.image-button {
+    display: inline-block;
+    background-color: #d9bac9;
+    color: #400923;
+    padding: 14px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-variant-caps: all-small-caps;
+    transition: all 0.3s ease;
+}
+
+.image-button:hover {
+    background-color: #d96299;
+    color: #400923;
+}
+.pill-button {
+    display: block;            
+    width: fit-content;      
+    margin: 30px auto;         
+    
+    padding: 15px 36px;
+    border-radius: 9999px;
+    background-color: #d9bac9;
+    color: #400923;
+    font-size: 1.5rem;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.pill-button:hover {
+    background-color: #FFFFFF;
+    color: #400923;
+    transform: translateY(-2px);
+	
+}
+
+	.type-categories {
+    background-color: #400923;
+    padding: 7%;
+    font-size: 2.8vw;
+    text-align: center; 
+
+	
+	
+}
+
+.moreofmywork {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 2vw;
+    color: #400923;            
+    background-color: #d9bac9;    
+    font-weight: 500;
+    letter-spacing: -1px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;      
+    font-family: "Montserrat", sans-serif;
+	font-variant-caps: all-small-caps;
+}
+
+.moreofmywork:hover {
+    color: #FFFFFF;               /* Text turns white on hover */
+    background-color: #d96299;    /* Background changes to your pink accent on hover */
+    border-color: #d96299;
+    transform: translateY(-2px);
+
+}
+
+.moreofmywork:active {
+    transform: translateY(0);
+}
+
+.main-body {
+    background-color: #262425; 
+    padding: 80px 20px 120px 20px; 
+    width: 100vw;            
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;       
+    margin-right: -50vw;
+    margin-top: 100px;       
+   
+}
+
+.typebutton {
+    text-align: center;
+    margin: 20px 0;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 9999px;
+    justify-content: center;
+}
+
+/* ==========================================================================
+   6. Images & Galleries / Slideshow
+   ========================================================================== */
+
+img {
+    vertical-align: middle;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto 5% auto;
+    max-width: 150%;
+    height: auto;
+}
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
+
+.image-row .paired-img {
+    flex: 1;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 20px;
+    margin: 0;
+}
+.slideshow-container {
+    max-width: 1300px;
+    position: relative;
+    margin: auto;
+    height: 900px;
+}
+
+.mySlides {
+    display: none;
+}
+
+
+
+.mySlides img {
+    height: 750px;        
+    object-fit: contain;   
+    background-color: #000;   
+}
+
+.slideshow-container {
+    max-width: 1400px;     
+    height: 800px;     
+    position: relative;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+.numbertext {
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 12px 18px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    user-select: none;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.prev { left: 15px; }
+.next { right: 15px; }
+
+.prev:hover, .next:hover {
+    background-color: #FFFFFF;
+		color: #000000;
+}
+
+.text {
+    color: #FFFFFF;
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 9%;       
+    margin-right: 5%;   
+    font-family: "Montserrat", sans-serif;
+    font-variant-caps: all-petite-caps;
+    font-weight: bold;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 10px 4px 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: .4; }
+    to { opacity: 1; }
+}
+
+/* ==========================================================================
+   7. Contact Form Section
+   ========================================================================== */
+
+.contact-section {
+    padding: 25px 40px;
+}
+
+.container {
+    border-radius: 40px;
+    background-color: #f2e8dc;
+    padding: 20px 30px;
+    color: #262425;
+    max-width: 1200px;
+    width: 75%;
+    margin: 50px auto 100px auto;
+}
+
+.container h2 {
+    font-family: "Vina Sans", display;
+    font-size: 4.7rem;
+    color: #401a2c;
+    margin-bottom: 40px;
+    letter-spacing: -2px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+}
+
+.column {
+    flex: 1;
+    min-width: 100px;
+}
+
+.column img {
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+label {
+    display: flow-root;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.7vw;
+    letter-spacing: -0.1px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 25px;
+    margin-top: 4px;
+    margin-bottom: 18px;
+    resize: vertical;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3vw;
+}
+
+input[type=submit] {
+    background-color: #401a2c;
+    color: #FFFFFF;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 1.3vw;
+    transition: all 0.2s ease;
+}
+
+input[type=submit]:hover {
+    background-color: #d96299;
+    color: #FFFFFF;
+}
+
+
+.workherotitle {
+    color: #d96299;
+    font-size: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "BBH Bogle";
+    gap: 5px;    
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/experimentspic.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px; 
+    
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+
+
+h1 {
+    color: #d9bac9;
+    font-size: 9vw;
+    padding-bottom: 0; 
+    margin: 0;
+    font-family: "BBH Bogle";
+    text-align: center;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px; 
+}
+
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/experimentspic.jpg");
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    margin-top: 0; 
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.hero-text button:hover {
+    background-color: #400923;
+    color: #d9bac9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.esubtitle {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2vw;
+    letter-spacing: 2px;
+    white-space: nowrap; 
+    margin: 20px 0;
+	text-align: center;
+	font-variant-caps: all-small-caps;
+}
+.design-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+}
+
+.type-categories {
+    background-color: #400923;
+    padding: 7%;
+    font-size: 2.8vw;
+}
+
+.quote-section {
+    font-size: 3vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Footer
+*/
+
+
+.site-footer, .toolkitfooter, .workfooter {
+    background-color: #d96299;
+    padding: 30px 40px;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}
+
+.site-footer {
+	
+	padding-top: 3%;
+	
+	
+}
+
+
+/* Footer Link Containers / Lists */
+.footer-links
+.workfooter{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    gap: 60px;
+}
+
+
+.toolkitfooter li {
+    margin-bottom: 8px;
+}
+
+
+.workfooter {
+    clear: both;
+    background-color: #d96299;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: 330px; /* Pushes the footer down away from the slideshow */
+    box-sizing: border-box;
+    display: block;    
+    text-align: left;       
+    list-style-type: disc;  
+    padding: 5%;
+    z-index: 10;
+}
+
+.workfooter li {
+    margin-bottom: 12px;
+    text-align: left; 
+	margin-top: 40px; 
+}
+
+.workfooter li a {
+    color: #400923;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.7vw;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+    font-variant-caps: all-small-caps;
+}
+
+.workfooter li a:hover {
+    color: #FFFFFF;
+}
+
+
+
+
+/* Base styling for ALL footer links */
+.footer-links li a, 
+.toolkitfooter li a
+ .workfooter li a{
+    color: #400923;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem; /* Using rem instead of vw keeps font sizes consistent and readable */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+    font-variant-caps: all-small-caps;
+}
+
+/* Hover state for ALL footer links */
+.footer-links li a:hover, 
+.toolkitfooter li a:hover,
+.workfooter li a:hover {
+    color: #FFFFFF;
+}
+
+
+.toolkitfooter
+.workfooter{
+    background-color: #d96299;
+    padding: 40px 40px;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+    
+    display: block;    
+    text-align: left;      
+    list-style-type: disc;  
+    padding-left: 5%;    
+}
+
+.toolkitfooter li
+.workfooter li {
+    margin-bottom: 12px;
+    text-align: left;        /* Ensures list items stay left-aligned */
+}
+
+.toolkitfooter li a {
+    color: #400923;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.7vw;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+    font-variant-caps: all-small-caps;
+}
+
+
+.toolkitfooter li a:hover {
+    color: #FFFFFF;
+}
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 800px;           /* Increased from 600px to make it bigger (adjust as needed) */
+  height: 550px;          /* Increased from 400px to keep proportions */
+  perspective: 1000px;    /* Slightly increased perspective for better 3D depth */
+  font-family: "Montserrat";
+  font-size: 2vw;
+  color: #FFFFFF;
+  font-variant-caps: all-small-caps;
+  margin: 50px auto;      
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  
+  /* Ensures images or contents inside are cleanly centered */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flip-card-front {
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #400923;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+
+.shake-img {
+    display: inline-block; 
+    width: 500px;      
+    max-width: 100%;  
+    height: auto;        
+    transition: transform 0.2s ease;
+}
+
+.shake-img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+
+@media screen and (max-width: 800px) {
+    ul.topnav {
+        flex-direction: column;
+    }
+    
+    ul.topnav li {
+        width: 100%;
+    }
+    
+    .statement-section h3 {
+        font-size: 1.3rem;
+    }
+    
+    .row {
+        flex-direction: column;
+    }
+    
+    .column {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .prev, .next, .text { 
+        font-size: 1rem; 
+    }
+}		

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Work</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Bagel+Fat+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+    
+<body id="top" style="background-image: url('images/experimentspic.jpg') linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), ; background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+
+	
+    <header>
+        <nav>
+            <ul class="topnav">
+                <li><a href="index.html">About</a></li>
+                <li><a href="work.html" class="active">Work</a></li>
+                <li><a href="toolkit.html">Toolkit</a></li>
+                <li><a href="experiments.html">Experiments</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <section class="workherotitle">
+        <h1>My creative work</h1>
+
+        <div class="hero-buttons">
+            <a href="https://noctrl.box.com/s/r3nq3u4wtp7l98or8q1scz9h7dlilabb" class="moreofmywork" target="_blank">More Of My Work</a>
+        </div>
+    </section>
+    
+    <!-- ================= 2. BODY SECTION (Main Content) ================= -->
+    <main class="main-body">
+        
+        <!-- Slideshow -->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/landscape.jpg" alt="Nature landscape" style="width:100%">
+                <div class="text">Monet-Inspired Oil Painting: Oil paints and canvas, Applied impressionist style</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/annawilliamson_abstractportrait.jpg" alt="Abstract Portrait" style="width:100%">
+                <div class="text">Abstract Portrait: Used construction paper and self portrait image, emphasized shape and abstract concept</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/naturearticle.jpg" alt="Mountain landscape" style="width:100%">
+                <div class="text">Digital Nature Article: Used InDesign, Illustrator and Photoshop, focused on shape and interesting visuals</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/collageart.jpg" alt="collageart" style="width:100%">
+                <div class="text">Abstract Collage Piece: Use oil pastels and colored pencils: focused on shape, line, color and emphasis</div>
+            </div>
+
+ 
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+    </main>
+
+
+    <footer class="workfooter">
+        <ul>
+            <li><a href="https://www.w3schools.com/howto/howto_js_slideshow.asp" target="_blank">W3Schools – How To Create a Slideshow</a></li>
+        </ul>
+    </footer>
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            if (dots.length > 0 && dots[slideIndex - 1]) {
+                dots[slideIndex - 1].className += " active";
+            }
+        }
+    </script>
+
+</body>
+</html>
+
